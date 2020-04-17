@@ -49,11 +49,12 @@
 2. 1440px
 ************/
 
+
 @media only screen and (max-width: 1440px)
 {
 	.general_info
 	{
-		width: 400px;
+		width: 521px;
 	}
 	.general_info_image
 	{
@@ -76,6 +77,7 @@
 		padding-right: 36px;
 	}
 }
+
 
 /************
 3. 1380px

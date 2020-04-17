@@ -299,9 +299,10 @@ section
 {
 	color: #8583e1;
 }
-.main_nav
+.main_nav 
 {
 	width: 100%;
+	
 }
 .main_nav ul
 {
@@ -525,7 +526,7 @@ section
 	font-size: 30px;
 	font-weight: 500;
 	color: #7a798c;
-	line-height: 0.75;
+	line-height: 1;
 }
 .main_title
 {
