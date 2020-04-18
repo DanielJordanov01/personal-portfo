@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -17,6 +17,18 @@ def education():
 @app.route('/contact')
 def contact():
 	return render_template('contact.html')
+
+@app.route('/submit_form', methods=['POST', 'GET'])
+def submit_form():
+	if request.method == 'POST':
+		try:
+			data = request.form.to_dict()
+			print(data)
+			return 'sent'
+		except:
+			return 'Could not send. Check connection'
+	else:
+		return 'sth went wrong'
 
 if __name__ == '__main__':
 	app.run()
