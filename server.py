@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
-import csv
-
+from packages.save_data import save_data_to_csv
 app = Flask(__name__)
 
 @app.route('/')
@@ -18,14 +17,6 @@ def education():
 @app.route('/contact')
 def contact():
 	return render_template('contact.html')
-
-def save_data_to_csv(data):
-	with open('database.csv', 'a+') as database2:
-		email = data['email']
-		subject = data['subject']
-		message = data['message']
-		csv_writer = csv.writer(database2, delimiter=',', quotechar=str(csv.QUOTE_NONE), quoting=csv.QUOTE_MINIMAL)
-		csv_writer.writerow([email,subject,message])
 
 @app.route('/submit_form', methods=['POST', 'GET'])
 def submit_form():
