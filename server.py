@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from packages.save_data import save_data_to_csv
+from packages.database.save_data import save_data_to_csv
 app = Flask(__name__)
 
 @app.route('/')
@@ -26,10 +26,7 @@ def submit_form():
 			save_data_to_csv(data)
 			return render_template('thankyou.html')
 		except:
-			return 'Could not send. Check connection'
-	else:
-		return 'sth went wrong'
-
+			return render_template('error.html')
 
 
 if __name__ == '__main__':
