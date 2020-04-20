@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
-from packages.database.save_data import save_data_to_csv
+from packages.email_sender.email_sender import send_email
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -23,7 +24,7 @@ def submit_form():
 	if request.method == 'POST':
 		try:
 			data = request.form.to_dict()
-			save_data_to_csv(data)
+			send_email(data)
 			return render_template('thankyou.html')
 		except:
 			return render_template('error.html')
