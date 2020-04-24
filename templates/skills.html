@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Education</title>
+<title>Eperience</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="vCard template project">
@@ -9,8 +9,8 @@
 <link rel="stylesheet" type="text/css" href="../static/styles/bootstrap-4.1.2/bootstrap.min.css">
 <link href="../static/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="../static/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css">
-<link rel="stylesheet" type="text/css" href="../static/styles/education.css">
-<link rel="stylesheet" type="text/css" href="../static/styles/education_responsive.css">
+<link rel="stylesheet" type="text/css" href="../static/styles/experience.css">
+<link rel="stylesheet" type="text/css" href="../static/styles/experience_responsive.css">
 <link rel="stylesheet" type="text/css" href="../static/styles/global.css">
 <link rel="icon" href="../static/images/favicon.png">
 </head>
@@ -23,13 +23,13 @@
 	<header class="header">
 		<div class="header_content d-flex flex-row align-items-center justify-content-start">
 			<div class="logo"><img src="../static/images/logo_transparent12.png" style="width: 85px; height: 65px"></div>
-			<div class="nav">
+			<div id="skills_nav" class="nav">
 				<div class="main_nav d-flex flex-row align-items-end justify-content-start" >
 					<ul class="d-flex flex-row align-items-center justify-content-start">
 						<li><a href="../about.html">About</a></li>
 						<li><a href="experience.html">Experience</a></li>
-						<li  class="active"><a href="education.html">Education</a></li>
-						<li><a href="skills.html">Skills</a></li>
+						<li><a href="education.html">Education</a></li>
+						<li class="active"><a href="skills.html">Skills</a></li>
 					</ul>
 				</div>
 			</div>
@@ -39,7 +39,7 @@
 			<div class="hamburger ml-auto">menu</div>
 			<div class="menu_nav text-right">
 				<ul>
-					<li><a href="about.html">About</a></li>
+					<li><a href="../about.html">About</a></li>
 					<li><a href="experience.html">Experience</a></li>
 					<li><a href="education.html">Education</a></li>
 					<li><a href="skills.html">Skills</a></li>
@@ -105,41 +105,103 @@
 			<!-- Main Content -->
 
 			<div class="main_content">
-				<div class="main_title_container d-flex flex-column align-items-start justify-content-end">
-					<div class="main_title">My Education</div>
+				<div class="main_title_container d-flex flex-column align-items-start justify-content-end" style="margin-left: 8px">
+					<div class="main_title">My Skills</div>
+					<div class="main_subtitle" style="margin-top: 40px;">What I am good at</div>
 				</div>
 				<div class="main_content_scroll mCustomScrollbar" data-mcs-theme="minimal-dark">
-					
-					<!-- Education -->
 
-					<div class="education">
-						
-						<!-- Education Item -->
-						<div class="edu_item d-flex flex-lg-row flex-column align-items-start justfy-content-start">
-							<div><div class="edu_year">2020</div></div>
-							<div class="edu_content">
-								<div class="edu_title_container">
-									<div class="edu_title">Neofit Rilski High School</div>
-									<div class="edu_subtitle">Diploma of Completed Secondary Education</div>
-								</div>
-								<div class="edu_text">
-									<p>Finished a program with intense focus on English and Mathematics</p>
+					<!-- Skills Content -->
+					<div class="skills">
+						<div class="skills_text">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-xl-10">
+										<p>I am proficient in the following areas and confident in using these technologies for building and expanding apps as well as solving problems.</p>
+									</div>
 								</div>
 							</div>
 						</div>
+
+						<!-- Progress Bars -->
+						<div class="progress_bars" style="margin-top: 40px;">
+							<div class="container-fluid">
+								<div class="row">
+
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Java</div>
+											<div id="skill_1_pbar" class="skill_bars" data-perc="0.70" data-name="skill_1_pbar" data-color-start="#79ccff" data-color-end="#9b74ff"></div>
+										</div>
+									</div>
+
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">JavaScript</div>
+											<div id="skill_2_pbar" class="skill_bars" data-perc="0.60" data-name="skill_2_pbar" data-color-start="#ff4646" data-color-end="#ff26d9"></div>
+										</div>
+									</div>
+
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Flask</div>
+											<div id="skill_3_pbar" class="skill_bars" data-perc="0.75" data-name="skill_3_pbar" data-color-start="#0054ff" data-color-end="#ff23d3"></div>
+										</div>
+									</div>
+
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">React</div>
+											<div id="skill_4_pbar" class="skill_bars" data-perc="1.0" data-name="skill_4_pbar" data-color-start="#79ff7c" data-color-end="#ffbd4a"></div>
+										</div>
+									</div>
+
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Python</div>
+											<div id="skill_5_pbar" class="skill_bars" data-perc="0.90" data-name="skill_5_pbar" data-color-start="#79ff8f" data-color-end="#7b74ff"></div>
+										</div>
+									</div>
+
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Git&GitHub</div>
+											<div id="skill_6_pbar" class="skill_bars" data-perc="1.0" data-name="skill_6_pbar" data-color-start="#ff2d72" data-color-end="#ffab79"></div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						
+
 					</div>
 				</div>
 			</div>
 		</div>
+		</div>		
 	</div>
 </div>
 
 <script src="../static/js/jquery-3.2.1.min.js"></script>
 <script src="../static/styles/bootstrap-4.1.2/popper.js"></script>
 <script src="../static/styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+<script src="../static/plugins/greensock/TweenMax.min.js"></script>
+<script src="../static/plugins/greensock/TimelineMax.min.js"></script>
+<script src="../static/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="../static/plugins/greensock/animation.gsap.min.js"></script>
+<script src="../static/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="../static/plugins/progressbar/progressbar.js"></script>
 <script src="../static/plugins/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
 <script src="../static/plugins/easing/easing.js"></script>
 <script src="../static/plugins/parallax-js-master/parallax.min.js"></script>
-<script src="../static/js/education.js"></script>
+<script src="../static/js/skills.js"></script>
 </body>
-</html>	
+</html>

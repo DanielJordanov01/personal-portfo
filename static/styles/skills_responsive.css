@@ -34,6 +34,11 @@
 		bottom: -80px;
 		z-index: 10;
 	}
+	.loader_container
+	{
+		width: 50%;
+		margin-bottom: 60px;
+	}
 }
 
 /************
@@ -44,7 +49,7 @@
 {
 	.general_info
 	{
-		width: 521px;
+		width: 400px;
 	}
 	.general_info_image
 	{
@@ -58,11 +63,6 @@
 	{
 		font-size: 72px;
 	}
-	.nav
-	{
-		position: absolute;
-		left: 420px;
-	}
 }
 
 /************
@@ -71,10 +71,10 @@
 
 @media only screen and (max-width: 1380px)
 {
-	.nav
+	.milestone
 	{
-		position: absolute;
-		left: 420px;
+		width: 50%;
+		margin-bottom: 60px;
 	}
 }
 
@@ -87,11 +87,6 @@
 	.main_nav
 	{
 		display: none !important;
-	}
-	.nav
-	{
-		position: absolute;
-		left: 420px;
 	}
 	.menu
 	{
@@ -141,6 +136,10 @@
 	.general_info_title
 	{
 		font-size: 24px;
+	}
+	.milestones
+	{
+		padding-bottom: 30px;
 	}
 }
 
@@ -239,15 +238,9 @@
 	{
 		padding-right: 30px;
 	}
-	.exp_time
+	.milestone
 	{
-		width: auto;
-		text-align: left;
-	}
-	.exp_content
-	{
-		padding-left: 0px;
-		margin-top: 45px;
+		width: 100%;
 	}
 }
 
