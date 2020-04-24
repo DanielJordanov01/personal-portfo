@@ -235,6 +235,10 @@
 	{
 		font-size: 48px;
 	}
+	.main_title_container 
+	{
+		height: 153px;
+	}
 	.main_subtitle
 	{
 		font-size: 24px;
@@ -309,7 +313,7 @@
 	}
 	.main_title_container
 	{
-		height: 153px;
+		height: 123px;
 	}
 	.main_title
 	{

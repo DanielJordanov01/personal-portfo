@@ -516,6 +516,13 @@ section
 	padding-left: 82px;
 	padding-right: 30px;
 }
+
+.box
+{
+	margin-top: 4%; 
+	margin-bottom: 6%;
+}
+
 .main_title_container
 {
 	width: 100%;
@@ -533,7 +540,7 @@ section
 	font-size: 92px;
 	font-weight: 800;
 	color: #100f3a;
-	line-height: 0.75;
+	line-height: 0.9;
 	margin-top: 12px;
 }
 .about_content
@@ -542,7 +549,7 @@ section
 }
 .main_content_scroll
 {
-	margin-top: 72px;
+	margin-top: 52px;
 	max-height: calc(100% - 193px - 72px - 30px);
 	padding-right: 60px;
 }
