@@ -104,6 +104,10 @@
 		right: auto;
 		bottom: 10px;
 	}
+	.main_content
+	{
+	width: calc(100% - 410px);
+	}
 }
 
 /************
@@ -192,7 +196,10 @@
 
 @media only screen and (max-width: 880px)
 {
-	
+	.experience
+	{
+		overflow: visible;
+	}
 }
 
 /************
