@@ -322,7 +322,11 @@
 	}
 	.main_title_container
 	{
-		height: 153px;
+		height: 103px;
+	}
+	#title_slills_container
+	{
+		margin-top: 35px;
 	}
 	.main_title
 	{

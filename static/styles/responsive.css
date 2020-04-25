@@ -81,7 +81,21 @@
 
 @media only screen and (max-width: 1380px)
 {
-	
+
+}
+
+/************
+3. 1300px
+************/
+
+
+@media only screen and (max-width: 1300px)
+{
+	.main_title_container
+{
+	width: 100%;
+	height: 153px;
+}
 }
 
 /************
@@ -143,6 +157,11 @@
 	{
 		font-size: 24px;
 	}
+	.main_title_container
+	{
+		width: 100%;
+		height: 83px;
+	}
 }
 
 /************
@@ -196,6 +215,12 @@
 	.main_subtitle 
 	{
 		line-height: 1.1
+	}
+	.main_title_container
+	
+	{
+	width: 100%;
+	height: 153px;
 	}
 }
 
@@ -318,6 +343,7 @@
 	.main_title
 	{
 		font-size: 36px;
+		margin-top: 25px;
 	}
 	.main_subtitle
 	{

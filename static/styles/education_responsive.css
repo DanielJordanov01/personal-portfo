@@ -174,7 +174,11 @@
 	}
 	.edu_year
 	{
-		margin-bottom: 60px;
+		margin-bottom: 20px;
+	}
+	.main_content_scroll
+	{
+		margin-top: 60px;
 	}
 }
 
@@ -319,7 +323,7 @@
 	}
 	.main_title_container
 	{
-		height: 153px;
+		height: 103px;
 	}
 	.main_title
 	{
