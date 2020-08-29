@@ -687,11 +687,11 @@ section
 }
 .edu_year
 {
-	width: 100px;
-	font-size: 24px;
+	width: 150px;
+	font-size: 20px;
 	font-weight: 700;
 	color: #8583e1;
-	line-height: 0.75;
+	line-height: 1.2;
 }
 .edu_image
 {
